@@ -24,13 +24,6 @@
 @import url(../lib/flexslider/flexslider.css);
 
 /* Fonts */
-/*@font-face {
-  font-family: 'Tahoma';
-  src: url('../fonts/tahoma/Tahoma.eot');
-  src: local('☺'), url('../fonts/tahoma/Tahoma.woff') format('woff'), url('../fonts/tahoma/Tahoma.ttf') format('truetype'), url('../fonts/tahoma/Tahoma.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}*/
 
 /* Layout Style
   ========================================================================== */
@@ -297,6 +290,41 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu li > .submenu .submenu > li:hover > a {
   color: #fff;
 }
+.nav-toogle {
+  position: absolute;
+  top: 40px;
+  left: 100%;
+  display: none;
+}
+.nav-toogle i {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  background: #c70f19;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.nav-toogle i:before {
+  content: "\f0c9";
+  font-family: "FontAwesome";
+  color: #fff;
+}
+.nav-toogle.has-open i:before {
+  content: "\f00d";
+}
+.nav-toogle.has-open:after {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+}
 
 /* Block Title Commom
   ========================================================================== */
@@ -541,10 +569,71 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Footer Bot */
-footer .footer-bot {
-  background: #c70f19;
+.footer-top {
+  border-top: 5px solid #c70f19;
+  background: #222222;
+  padding: 45px 0;
 }
-footer .footer-bot .container {
+.ft-info address {
+  position: relative;
+  margin-bottom: 40px;
+}
+.ft-info address:before,
+.ft-info address:after {
+  position: absolute;
+  bottom: -23px;
+}
+.ft-info address:before {
+  content: "";
+  border: 2px solid #d8d8d8;
+  display: block;
+  left: 0;
+  right: 0;
+}
+.ft-info address:after {
+  content: "";
+  border: 2px solid #c70f19;
+  display: block;
+  width: 150px;
+}
+.ft-info p strong {
+  color: #fff;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 20px;
+}
+.ft-info p {
+  color: #eaeaea;
+  margin-bottom: 10px;
+}
+.ft-info address p:last-child {
+  margin-bottom: 0;
+}
+.ft-info p.link a {
+  color: #eaeaea;
+}
+.ft-info p.link a:hover {
+  color: #fff;
+}
+.block-statistics p {
+  color: #fff;
+  font-weight: 600;
+}
+.block-statistics p span {
+  float: left;
+  width: 130px;
+  color: #eaeaea;
+  font-weight: normal;
+}
+.ft-map object {
+  width: 100%;
+  height: 320px;
+  border: 0;
+}
+.footer-bot {
+  background: #000000;
+}
+.footer-bot .container {
   position: relative;
 }
 .footer-bot p {
@@ -563,7 +652,7 @@ footer .footer-bot .container {
   width: 160px;
   text-align: center;
   line-height: 40px;
-  background: #512000;
+  background: #c70f19;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -1274,42 +1363,4 @@ h2.tit-page3 {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-}
-
-
-
-.nav-toogle {
-  position: absolute;
-  top: 40px;
-  left: 100%;
-  display: none;
-}
-.nav-toogle i {
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  font-size: 20px;
-  background: #c70f19;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-.nav-toogle i:before {
-  content: "\f0c9";
-  font-family: "FontAwesome";
-  color: #fff;
-}
-.nav-toogle.has-open i:before {
-  content: "\f00d";
-}
-.nav-toogle.has-open:after {
-  content: "";
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(255, 255, 255, 0.5);
-  z-index: -1;
 }
