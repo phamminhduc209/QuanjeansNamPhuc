@@ -132,7 +132,7 @@
 									<div class="block block-slide-detail">
 										<!-- Place somewhere in the <body> of your page -->
 										<div id="slider" class="flexslider">
-											<ul class="slides">
+											<ul class="slides slides-large">
 												<li><img src="images/detail/large/1.jpg" /></li>
 												<li><img src="images/detail/large/1.jpg" /></li>
 												<li><img src="images/detail/large/1.jpg" /></li>
@@ -141,6 +141,10 @@
 										</div>
 										<div id="carousel" class="flexslider">
 											<ul class="slides">
+												<li><img src="images/detail/thumb/1.jpg" /></li>
+												<li><img src="images/detail/thumb/2.jpg" /></li>
+												<li><img src="images/detail/thumb/3.jpg" /></li>
+												<li><img src="images/detail/thumb/4.jpg" /></li>
 												<li><img src="images/detail/thumb/1.jpg" /></li>
 												<li><img src="images/detail/thumb/2.jpg" /></li>
 												<li><img src="images/detail/thumb/3.jpg" /></li>
@@ -156,6 +160,12 @@
 												<i class="fa fa-shopping-cart"></i>
 												TÊN SẢN PHẨM QUẦN JEANS CHẤT LƯỢNG CAO
 											</h2>
+										</div>
+										<div class="block-content">
+											<p>
+												<span class="title">Giá sản phẩm:</span>
+												
+											</p>
 										</div>
 									</div>
 								</div>
@@ -311,8 +321,8 @@
 				animation: "slide",
 				controlNav: false,
 				animationLoop: true,
-				slideshow: true,
-				itemWidth: 73,
+				slideshow: false,
+				itemWidth: 75,
 				itemMargin: 15,
 				nextText: "",
 				prevText: "",
@@ -329,7 +339,7 @@
 				sync: "#carousel"
 			});
 
-			$('.bxslider .item').each(function () {
+			$('.slides-large li').each(function () {
                 $(this).zoom();
             });
 		});

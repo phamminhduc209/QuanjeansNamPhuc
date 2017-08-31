@@ -1248,7 +1248,7 @@ h2.tit-page3 {
   padding-bottom: 5px;
 }
 .block-slide-detail #carousel.flexslider img {
-  border: 1px solid transparent;
+  border: 1px solid #dfdfdf;
   cursor: pointer;
   -webkit-box-shadow: 8px 8px 12px -6px rgba(0,0,0,0.2);
   -moz-box-shadow: 8px 8px 12px -6px rgba(0,0,0,0.2);
@@ -1424,4 +1424,74 @@ h2.tit-page3 {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.edit {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  position: relative;
+  border: 1px dashed #c70f19;
+}
+.edit:before {
+  content: "\f040";
+  font-family: "FontAwesome";
+  font-size: 13px;
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: #c70f19;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.input-edit {
+  position: relative;
+}
+.input-edit .form-control {
+  border: 1px solid #ccc;
+  padding: 6px 78px 6px 12px;
+  position: relative;
+}
+.input-edit .form-control:focus {
+  background: rgba(254, 71, 80, 0.1);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.6), 0 0 8px rgb(255, 102, .6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.6), 0 0 8px rgb(255, 102, .6);
+}
+.input-edit .fa {
+  font-size: 16px;
+  color: #c70f19;
+  border: 1px solid #c70f19;
+  width: 34px;
+  height: 34px;
+  line-height: 31px;
+  text-align: center;
+  display: block;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  transition: all 0.2s;
+}
+.input-edit .fa-check {
+  right: 33px;
+  background: #fff;
+  border: 1px solid #1fa67a;
+  color: #1fa67a;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  transition: all 0.2s;
+}
+.input-edit .fa-check:hover {
+  background: #dff0d8;
+  transition: all 0.2s;
+}
+.input-edit .fa-times:hover {
+  background: #f2dede;
+  transition: all 0.2s;
 }
