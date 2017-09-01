@@ -104,6 +104,13 @@
 						<li class="level0"><a href="pro-cate.html" title="Thi Công">KHUYẾN MÃI</a></li>
 						<li class="level0"><a href="pro-cate.html" title="Nội Thất">TUYỂN DỤNG</a></li>
 						<li class="level0"><a href="contact.html" title="Liên Hệ">Liên Hệ</a></li>
+						<li class="cart">
+							<a href="#" onclick="return false;" title="Cart" data-toggle="modal" data-target="#Cart">
+								<i class="fa fa-shopping-cart"></i>
+								<span>Giỏ hàng</span><br>
+								<span>0 Sản phẩm</span>
+							</a>
+						</li>
 					</ul>
 				</div>
 			</nav><!-- /menu-top -->
@@ -137,6 +144,10 @@
 												<li><img src="images/detail/large/1.jpg" /></li>
 												<li><img src="images/detail/large/1.jpg" /></li>
 												<li><img src="images/detail/large/1.jpg" /></li>
+												<li><img src="images/detail/large/1.jpg" /></li>
+												<li><img src="images/detail/large/1.jpg" /></li>
+												<li><img src="images/detail/large/1.jpg" /></li>
+												<li><img src="images/detail/large/1.jpg" /></li>
 											</ul>
 										</div>
 										<div id="carousel" class="flexslider">
@@ -162,47 +173,55 @@
 											</h2>
 										</div>
 										<div class="block-content">
-											<div class="block block-datail-if">
-												<div>
-													<span class="title">Giá sản phẩm:</span>
-													<span>355.000đ</span>
+											<div class="block block-product-options clearfix">
+												<div class="bl-modul-cm bl-price">
+													<p class="title">Giá sản phẩm:</p>
+													<p class="des">355.000đ</p>
 												</div>
-												<div>
-													<span class="title">Màu sắc sản phẩm:</span>
-													<ul>
-														<li>white</li>
-														<li>black</li>
-														<li>pink</li>
-													</ul>
+												<div class="bl-modul-cm bl-color">
+													<p class="title">Màu sắc sản phẩm:</p>
+													<div class="des">
+														<ul>
+															<li style="background: #000000;" class="active"></li>
+															<li style="background: #ffffff;"></li>
+															<li style="background: #00022c;"></li>
+															<li style="background: #3e8ebb;"></li>
+														</ul>
+													</div>
 												</div>
-												<div>
-													<span class="title">Size sản phẩm:</span>
-													<ul>
-														<li>27</li>
-														<li>28</li>
-														<li>29</li>
-														<li>30</li>
-													</ul>
+												<div class="bl-modul-cm bl-size">
+													<p class="title">Size sản phẩm:</p>
+													<div class="des">
+														<ul>
+															<li class="active">27</li>
+															<li>28</li>
+															<li>29</li>
+															<li>30</li>
+														</ul>
+													</div>
 												</div>
-												<div>
+												<div class="bl-modul bl-show-option">
 													<span class="title">Vòng eo sản phẩm:</span>
-													<select>
-														<option value="1">1</option>
-													</select>
+													<div class="des">
+														<b>56cm</b>
+														<b>56cm</b>
+													</div>
 												</div>
-												<div>
+												<div class="bl-modul bl-show-option">
 													<span class="title">Phong cách sản phẩm:</span>
-													<select>
-														<option value="1">1</option>
-													</select>
+													<div class="des">
+														<b>Quần jeans thun</b>
+														<b>Quần jeans thun</b>
+														<b>Quần jeans thun</b>
+														<b>Quần jeans thun</b>
+														<b>Quần jeans thun</b>
+													</div>
 												</div>
 											</div><!-- /block-datail-if -->
 											<div class="block block-share">
 												Share
 											</div>
-											<div class="block-button">
-												<button type="button" class="btn btn-danger">Thêm vào giỏ hàng</button>
-											</div>
+											<button type="button" class="btn btn-addcart-product">Thêm vào giỏ hàng</button>
 										</div>
 									</div>
 								</div>
@@ -227,7 +246,99 @@
 										SẢN PHẨM LIÊN QUAN
 									</h2>
 								</div>
-								<div class="block-content">
+								<div class="block-content product-list">
+									<ul class="owl-carousel owl-theme owl-style2" data-nav="true" data-dots="false" data-autoplay="true" data-autoplayTimeout="500" data-loop="true" data-margin="30" data-responsive='{"0":{"items":1},"480":{"items":2},"600":{"items":2},"768":{"items":3},"800":{"items":3},"992":{"items":4}}'>
+										<li class="product-item">
+									  		<div class="product-img">
+									  			<a href="#" title="">
+									  				<img src="images/products/1.jpg" class="img-1" alt="">
+									  				<img src="images/products/2.jpg" class="img-2 show-on-hover fill" alt="">
+								  				</a>
+									  		</div>
+									  		<div class="product-info">
+										  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
+										  		<div class="product-price">
+										  			<span class="price-new">345.000đ</span>
+										  			<span class="price-old">425.000đ</span>
+										  		</div>
+									  		</div>
+								  		</li>
+								  		<li class="product-item">
+									  		<div class="product-img">
+									  			<a href="#" title="">
+									  				<img src="images/products/1.jpg" class="img-1" alt="">
+									  				<img src="images/products/2.jpg" class="img-2 show-on-hover fill" alt="">
+								  				</a>
+									  		</div>
+									  		<div class="product-info">
+										  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
+										  		<div class="product-price">
+										  			<span class="price-new">345.000đ</span>
+										  			<span class="price-old">425.000đ</span>
+										  		</div>
+									  		</div>
+								  		</li>
+								  		<li class="product-item">
+									  		<div class="product-img">
+									  			<a href="#" title="">
+									  				<img src="images/products/2.jpg" class="img-1" alt="">
+									  				<img src="images/products/3.jpg" class="img-2 show-on-hover fill" alt="">
+								  				</a>
+									  		</div>
+									  		<div class="product-info">
+										  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
+										  		<div class="product-price">
+										  			<span class="price-new">345.000đ</span>
+										  			<span class="price-old">425.000đ</span>
+										  		</div>
+									  		</div>
+								  		</li>
+								  		<li class="product-item">
+									  		<div class="product-img">
+									  			<a href="#" title="">
+									  				<img src="images/products/3.jpg" class="img-1" alt="">
+									  				<img src="images/products/4.jpg" class="img-2 show-on-hover fill" alt="">
+								  				</a>
+									  		</div>
+									  		<div class="product-info">
+										  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
+										  		<div class="product-price">
+										  			<span class="price-new">345.000đ</span>
+										  			<span class="price-old">425.000đ</span>
+										  		</div>
+									  		</div>
+								  		</li>
+								  		<li class="product-item">
+									  		<div class="product-img">
+									  			<a href="#" title="">
+									  				<img src="images/products/4.jpg" class="img-1" alt="">
+									  				<img src="images/products/5.jpg" class="img-2 show-on-hover fill" alt="">
+								  				</a>
+									  		</div>
+									  		<div class="product-info">
+										  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
+										  		<div class="product-price">
+										  			<span class="price-new">345.000đ</span>
+										  			<span class="price-old">425.000đ</span>
+										  		</div>
+									  		</div>
+								  		</li>
+								  		<li class="product-item">
+									  		<div class="product-img">
+									  			<a href="#" title="">
+									  				<img src="images/products/1.jpg" class="img-1" alt="">
+									  				<img src="images/products/2.jpg" class="img-2 show-on-hover fill" alt="">
+								  				</a>
+									  		</div>
+									  		<div class="product-info">
+										  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
+										  		<div class="product-price">
+										  			<span class="price-new">345.000đ</span>
+										  			<span class="price-old">425.000đ</span>
+										  		</div>
+									  		</div>
+								  		</li>
+									</ul>
 								</div>
 							</div>
 						</div>
@@ -358,6 +469,84 @@
 	<a id="return-to-top" class="td-scroll-up" href="javascript:void(0)">
   		<i class="fa fa-angle-up" aria-hidden="true"></i>
 	</a><!-- return to top -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="Cart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<i class="fa fa-times-circle"></i>
+				</button>
+				<div class="shopcart-ct">
+					<div class="modal-body">
+						<form action="#" method="POST" id="frm_order_items">
+							<div class="table cart-tbl">
+								<div class="table-row thead">
+									<div class="table-cell product-col t-c">Sản phẩm</div>
+									<div class="table-cell numb-col t-c">Số lượng</div>
+									<div class="table-cell total-col t-c">Thành tiền</div>
+								</div><!-- table-row thead -->
+								<div class="tr-wrap">
+									<div class="table-row clearfix">
+										<div class="table-cell product-col">
+											<figure class="img-prod">
+												<img alt="Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng" src="images/cart/1.jpg">
+											</figure>
+											<a href="#" target="_blank" title="Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng">Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng</a>
+											<p class="p-color">
+												<span>Màu sắc sản phẩm:</span>
+												<span>Đen</span>
+											</p>
+											<p class="p-size">
+												<span>Size sản phẩm:</span>
+												<span>39</span>
+												<span>|</span>
+												<a href="#" title="Xóa sản phẩm">Xóa</a>
+											</p>
+										</div>
+										<div class="table-cell numb-col t-c">
+											<select name="" size="1" class="change_quantity">
+												<option value="0">0</option>
+												<option value="1" selected="">1</option>
+												<option value="2">2</option>
+											</select>
+										</div>
+										<div class="table-cell total-col t-r">355.000đ</div><!-- /table-cell total-col t-r -->
+									</div>
+									<div class="table-row clearfix">
+										<div class="table-cell product-col">
+											<figure class="img-prod">
+												<img alt="Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng" src="images/cart/1.jpg">
+											</figure>
+											<a href="#" target="_blank" title="Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng">Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng</a>
+											<p class="p-color">
+												<span>Màu sắc sản phẩm:</span>
+												<span>Đen</span>
+											</p>
+											<p class="p-size">
+												<span>Size sản phẩm:</span>
+												<span>39</span>
+												<span>|</span>
+												<a href="#" title="Xóa sản phẩm">Xóa</a>
+											</p>
+										</div>
+										<div class="table-cell numb-col t-c">
+											<select name="" size="1" class="change_quantity">
+												<option value="0">0</option>
+												<option value="1" selected="">1</option>
+												<option value="2">2</option>
+											</select>
+										</div>
+										<div class="table-cell total-col t-r">355.000đ</div><!-- /table-cell total-col t-r -->
+									</div>
+								</div><!-- tr-wrap -->
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- ===== JS ===== -->
 	<script src="js/jquery.min.js"></script>
