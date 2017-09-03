@@ -10,7 +10,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-	<title>Sales</title>
+	<title>Phương Thức Thanh Toán</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="robots" content="index,follow" />
@@ -30,7 +30,7 @@
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body>
+<body class="billing">
 
 	<header class="header">
 		<div class="block-header">
@@ -138,169 +138,143 @@
 			<div class="container">
 				<ul class="breadcrumb">
 					<li><a href="#">Trang chủ</a></li>
-					<li class="active">Khuyến mãi</li>
+					<li><a href="#">Giỏ hàng</a></li>
+					<li class="active">Thông tin thanh toán</li>
 				</ul>
 			</div>
 		</div><!-- /block-breadcrumb -->
 		<div class="block block-two-col container">
+			<div class="block-page-common">
+				<div class="block block-title">
+					<h2>
+						<i class="fa fa-cart-arrow-down"></i>
+						THÔNG TIN THANH TOÁN
+					</h2>
+				</div>
+			</div><!-- /block-page-common -->
 			<div class="row">
-				<div class="col-sm-9 col-xs-12 block-col-left">
-					<div class="block-page-common block-sales">
-						<div class="block block-title">
-							<h2>
-								<i class="fa fa-cart-arrow-down"></i>
-								KHUYẾN MÃI
-							</h2>
+				<div class="col-sm-8 col-xs-12 block-col-left">
+					<div class="block-billing">
+						<div class="block-title">
+							THÔNG TIN ĐẶT HÀNG
 						</div>
 						<div class="block-content">
-							<div class="item">
-								<div class="thumb">
-									<a href="#"><img src="images/sales/1.jpg" alt=""></a>
+							<form action="billing-infomation_submit" method="get" class="form-billing">
+								<div class="form-group">
+									<span class="input-addon"><i class="fa fa-user"></i></span>
+									<input type="text" class="form-control" id="inputname" placeholder="Họ và tên">
 								</div>
-								<div class="des">
-									<a href="#" title="">Tiêu đề bài viết nội thất nhà phố được viết bởi nhóm iMarketing - The title of this news is writen here today</a>
-									<p class="date-post"><i class="fa fa-calendar"></i> 20/07/2017</p>
-									<p class="description">
-										It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English...
-									</p>
+								<div class="form-group">
+									<span class="input-addon"><i class="fa fa-envelope"></i></span>
+									<input type="text" class="form-control" id="inputmail" placeholder="Email">
 								</div>
-							</div><!-- /item -->
-							<div class="item">
-								<div class="thumb">
-									<a href="#"><img src="images/sales/2.jpg" alt=""></a>
+								<div class="form-group">
+									<span class="input-addon"><i class="fa fa-phone"></i></span>
+									<input type="text" class="form-control" id="inputphone" placeholder="Số điện thoại">
 								</div>
-								<div class="des">
-									<a href="#" title="">Tiêu đề bài viết nội thất nhà phố được viết bởi nhóm iMarketing - The title of this news is writen here today</a>
-									<p class="date-post"><i class="fa fa-calendar"></i> 20/07/2017</p>
-									<p class="description">
-										It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English...
-									</p>
+								<div class="form-group">
+									<span class="input-addon"><i class="fa fa-home"></i></span>
+									<input type="text" class="form-control" id="inputaddress" placeholder="Địa chỉ">
 								</div>
-							</div><!-- /item -->
-							<div class="item">
-								<div class="thumb">
-									<a href="#"><img src="images/sales/3.jpg" alt=""></a>
+								<div class="form-group">
+									<label class="choose-another"><input type="radio" class="radio-cus"> Giao đến địa chỉ khác</label>
 								</div>
-								<div class="des">
-									<a href="#" title="">Tiêu đề bài viết nội thất nhà phố được viết bởi nhóm iMarketing - The title of this news is writen here today</a>
-									<p class="date-post"><i class="fa fa-calendar"></i> 20/07/2017</p>
-									<p class="description">
-										It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English...
-									</p>
+								<div class="form-group">
+									<b>Thông tin người nhận</b>
 								</div>
-							</div><!-- /item -->
-							<div class="item">
-								<div class="thumb">
-									<a href="#"><img src="images/sales/4.jpg" alt=""></a>
+								<div class="form-group">
+									<span class="input-addon"><i class="fa fa-user"></i></span>
+									<input type="text" class="form-control" id="inputname" placeholder="Họ và tên">
 								</div>
-								<div class="des">
-									<a href="#" title="">Tiêu đề bài viết nội thất nhà phố được viết bởi nhóm iMarketing - The title of this news is writen here today</a>
-									<p class="date-post"><i class="fa fa-calendar"></i> 20/07/2017</p>
-									<p class="description">
-										It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English...
-									</p>
+								<div class="form-group">
+									<span class="input-addon"><i class="fa fa-envelope"></i></span>
+									<input type="text" class="form-control" id="inputmail" placeholder="Email">
 								</div>
-							</div><!-- /item -->
-							<div class="item">
-								<div class="thumb">
-									<a href="#"><img src="images/sales/5.jpg" alt=""></a>
+								<div class="form-group">
+									<span class="input-addon"><i class="fa fa-phone"></i></span>
+									<input type="text" class="form-control" id="inputphone" placeholder="Số điện thoại">
 								</div>
-								<div class="des">
-									<a href="#" title="">Tiêu đề bài viết nội thất nhà phố được viết bởi nhóm iMarketing - The title of this news is writen here today</a>
-									<p class="date-post"><i class="fa fa-calendar"></i> 20/07/2017</p>
-									<p class="description">
-										It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English...
-									</p>
+								<div class="form-group">
+									<span class="input-addon"><i class="fa fa-home"></i></span>
+									<input type="text" class="form-control" id="inputaddress" placeholder="Địa chỉ">
 								</div>
-							</div><!-- /item -->
+								<div class="text-center">
+									<button type="button" class="btn btn-danger">
+										Tiếp tục <i class="fa fa-angle-right"></i>
+									</button>
+								</div>
+							</form>
 						</div>
-					</div><!-- /block-ct-news -->
-					<nav class="block-pagination">
-						<ul class="pagination">
-							<li><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
-							<li><a href="#"><i class="fa fa-angle-left"></i></a></a></li>
-							<li class="active"><a href="#">3</a></li>
-							<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-							<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-						</ul>
-					</nav><!-- /block-pagination -->
+					</div><!-- /block-billing -->
 				</div><!-- /block-col-left -->
-				<div class="col-sm-3 col-xs-12 block-col-right">
-					<div class="block-sidebar">
-						<div class="block-module block-links-sidebar">
-							<div class="block-title">
-								<h2>
-									<i class="fa fa-gift"></i>
-									KHUYẾN MÃI HOT
-								</h2>
-							</div>
-							<div class="block-content">
-								<ul class="list">
-									<li>
-										<a href="#" title="">
-											<p class="thumb"><img src="images/pro-sidebar/1.jpg" alt=""></p>
-											<h3>Tiêu đề khuyến mãi được viết bởi nhóm iMarketing</h3>
-										</a>
-									</li>
-									<li>
-										<a href="#" title="">
-											<p class="thumb"><img src="images/pro-sidebar/2.jpg" alt=""></p>
-											<h3>Tiêu đề khuyến mãi được viết bởi nhóm iMarketing</h3>
-										</a>
-									</li>
-									<li>
-										<a href="#" title="">
-											<p class="thumb"><img src="images/pro-sidebar/3.jpg" alt=""></p>
-											<h3>Tiêu đề khuyến mãi được viết bởi nhóm iMarketing</h3>
-										</a>
-									</li>
-									<li>
-										<a href="#" title="">
-											<p class="thumb"><img src="images/pro-sidebar/4.jpg" alt=""></p>
-											<h3>Tiêu đề khuyến mãi được viết bởi nhóm iMarketing</h3>
-										</a>
-									</li>
-									<li>
-										<a href="#" title="">
-											<p class="thumb"><img src="images/pro-sidebar/5.jpg" alt=""></p>
-											<h3>Tiêu đề khuyến mãi được viết bởi nhóm iMarketing</h3>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div><!-- /block-module -->
-						<div class="block-module block-statistics-sidebar">
-							<div class="block-title">
-								<h2>
-									<i class="fa fa-bar-chart"></i>
-									THỐNG KÊ TRUY CẬP
-								</h2>
-							</div>
-							<div class="block-content">
-								<ul class="list">
-									<li>
-										<span class="icon"><i class="fa fa-user"></i></span>
-										<span class="text">Hôm qua:</span>
-										<span class="number">246</span>
-									</li>
-									<li>
-										<span class="icon"><i class="fa fa-user"></i></span>
-										<span class="text">Hôm nay:</span>
-										<span class="number">246</span>
-									</li>
-									<li>
-										<span class="icon"><i class="fa fa-user"></i></span>
-										<span class="text">Trong tuần:</span>
-										<span class="number">246</span>
-									</li>
-									<li>
-										<span class="icon"><i class="fa fa-user"></i></span>
-										<span class="text">Tổng truy cập:</span>
-										<span class="number">246</span>
-									</li>
-								</ul>
-							</div>
-						</div><!-- /block-module -->
+				<div class="col-sm-4 col-xs-12 block-col-right">
+					<div class="block-billing-product">
+						<div class="block-title">
+							THÔNG TIN SẢN PHẨM
+						</div>
+						<div class="block-content">
+							<table class="table-billing-product">
+								<thead>
+									<tr>
+										<th style="width: 73%;"><strong>Sản phẩm</strong></th>
+										<th><strong>Tổng cộng</strong></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<p class="tb-commom">Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng</p>
+											<p class="tb-commom">Số lượng: x1</p>
+											<p class="tb-commom">
+												Màu sắc sản phẩm:
+												<span class="tb-img"><img src="images/color/000.jpg" alt=""></span>
+											</p>
+											<p class="tb-commom">Size sản phẩm: <span class="tb-commom1">29</span></p>
+											<p class="tb-commom1">Vòng eo sản phẩm: <span class="tb-commom">56cm</span></p>
+										</td>
+										<td>
+											<strong class="text-right">648.000đ</strong>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p class="tb-commom">Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng</p>
+											<p class="tb-commom">Số lượng: x1</p>
+											<p class="tb-commom">
+												Màu sắc sản phẩm:
+												<span class="tb-img"><img src="images/color/000.jpg" alt=""></span>
+											</p>
+											<p class="tb-commom">Size sản phẩm: <span class="tb-commom1">29</span></p>
+											<p class="tb-commom1">Vòng eo sản phẩm: <span class="tb-commom">56cm</span></p>
+										</td>
+										<td>
+											<strong class="text-right">648.000đ</strong>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<strong>Tổng phụ</strong>
+										</td>
+										<td>
+											<p class="text-right">1.296.000đ</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<strong>Tổng cộng</strong>
+										</td>
+										<td>
+											<p class="cl-red text-right">1.296.000đ</p>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2" class="text-center">
+											(Chưa bao gồm phí vận chuyển nếu có)
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</div><!-- /block-col-right -->
 			</div>
