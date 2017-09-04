@@ -1898,12 +1898,26 @@ h2.tit-page3 {
   transition: all 0.2s;
 }
 
-.block-fix {
+.block-search,
+.block-fb  {
   position: fixed;
   top: 30%;
-  right: 0;
+  right: -300px;
+  z-index: 99;
+  cursor: pointer;
+  width: 300px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s
 }
-.block-fb.block-fix {
+.block-search:hover,
+.block-fb:hover {
+  right: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s
+}
+.block-fb {
   margin-top: 50px;
 }
 .block-search .icon,
@@ -1916,7 +1930,13 @@ h2.tit-page3 {
   cursor: pointer;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
-  transition: all 0.3s
+  transition: all 0.3s;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  position: absolute;
+  top: 0;
+  left: -40px;
 }
 .block-search .icon:hover,
 .block-fb .icon:hover {
@@ -1929,6 +1949,12 @@ h2.tit-page3 {
 .block-fb .icon i {
   color: #fff;
   font-size: 20px;
+  line-height: 40px;
+}
+.block-search input {
+  width: 300px;
+  line-height: 40px;
+  padding: 0 12px;
 }
 
 .block-cart .shopcart-ct .thead {
