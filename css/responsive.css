@@ -50,6 +50,9 @@
   .block-info .row > div {
     width: calc(100% / 3);
   }
+  .table-billing-product .table-width {
+    width: 60%;
+  }
 }
 
 /*----------------
@@ -261,6 +264,22 @@
 }
 
 /*----------------
+[Styles for devices max 768px
+*/
+@media (max-width: 768px) {
+  .block-col-left {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .block-col-right {
+    width: 100%;
+  }
+  .table-billing-product .table-width {
+    width: 80%;
+  }
+}
+
+/*----------------
 [Styles for devices max 767px
 */
 @media (max-width: 767px) {
@@ -279,6 +298,11 @@
   .modal .modal-dialog {
     width: auto;
   }
+  .modal button.close {
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
 }
 
 /*----------------
@@ -287,6 +311,82 @@
 @media (max-width: 600px) {
   .block-info .item p span.info {
     font-size: 12px;
+  }
+  .block-sales .item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  .block-sales .thumb {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .block-sales .thumb img {
+    margin: 0 auto;
+  }
+  .block-sales .des {
+    width: calc(100% - 0px);
+    text-align: center;
+  }
+  .block-sales .des a {
+    margin-bottom: 5px;
+  }
+  .block-sales .des .date-post {
+    margin-bottom: 5px;
+  }
+
+  .block-billing .form-billing .form-group {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  .block-billing .thumb {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .block-billing .thumb img {
+    margin: 0 auto;
+  }
+  .block-billing .des {
+    width: calc(100% - 0px);
+    text-align: center;
+  }
+}
+
+/*----------------
+[Styles for devices max 560px
+*/
+@media (max-width: 560px) {
+  .shopcart-ct .thead {
+    display: none;
+  }
+  .shopcart-ct .product-col {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  .shopcart-ct .table .table-cell.price-col, .shopcart-ct .table .table-cell.numb-col, .shopcart-ct .table .table-cell.gift-col {
+    display: block;
+    width: 40%;
+    float: left;
+    padding-bottom: 0;
+    text-align: left;
+  }
+
+  .block-cart .shopcart-ct .thead {
+    display: none;
+  }
+  .block-cart .shopcart-ct .product-col {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  .block-cart .shopcart-ct .price-col, .block-cart .shopcart-ct .total-col, .block-cart .shopcart-ct .numb-col {
+    display: block;
+    width: 50%;
+    float: left;
+    padding-bottom: 0;
+    text-align: center;
   }
 }
 
@@ -338,6 +438,9 @@
   }
   .product-list .col-xs-6 {
     width: 100%;
+  }
+  .table-billing-product .table-width {
+    width: 70%;
   }
 }
 

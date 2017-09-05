@@ -258,7 +258,7 @@ select {
   display: block;
   position: absolute;
   top: 100%;
-  font-size: 14px;
+  font-size: 13px;
   width: 300px;
   border-left: 1px solid #9c0008;
   -webkit-transition: 0.3s;
@@ -529,7 +529,7 @@ select {
 .block-title-cm .block-title .desc {
   display: block;
   color: #666666;
-  font-size: 14px;
+  font-size: 13px;
   text-align: center;
   line-height: 1.6;
   padding: 0 85px;
@@ -623,6 +623,9 @@ select {
 }
 .table-billing-product {
   width: 100%;
+}
+.table-billing-product .table-width {
+  width: 73%;
 }
 .block-billing-product .table-billing-product>tbody>tr>td,
 .block-billing-product .table-billing-product>tbody>tr>th, 
@@ -722,7 +725,7 @@ select {
 }
 .block-about .item .des .description {
   color: #333;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.4;
   text-align: justify;
 }
@@ -811,7 +814,7 @@ select {
 }
 .block-categories-hm .item .description {
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.4;
   margin-bottom: 20px;
   opacity: 0;
@@ -982,7 +985,7 @@ select {
 }
 .btn-pay {
   width: 100%;
-  padding: 14px 12px;
+  padding: 13px 12px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -1088,7 +1091,7 @@ select {
 }
 .product-item .product-info h2 a {
   color: #465363;
-  font-size: 14px;
+  font-size: 13px;
   display: block;
   line-height: 1.4;
 }
@@ -1101,7 +1104,7 @@ select {
   margin-bottom: 10px;
 }
 .product-item .product-info .product-price .price-new {
-  font-size: 14px;
+  font-size: 13px;
   color: #ea0000;
   margin-right: 20px;
 }
@@ -1217,7 +1220,7 @@ select {
 /* About
   ========================================================================== */
 .block-article .description {
-  font-size: 14px;
+  font-size: 13px;
   color: #333;
   line-height: 1.6;
   margin-bottom: 25px;
@@ -1247,7 +1250,7 @@ select {
   width: calc(100% - 330px);
 }
 .block-sales .des a {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   color: #333333;
   line-height: 1.6;
@@ -1262,15 +1265,17 @@ select {
   margin-bottom: 10px;
 }
 .block-sales .des .description {
-  font-size: 14px;
+  font-size: 13px;
   color: #666666;
   line-height: 1.6;
+  max-height: 80px;
+  overflow: hidden;
 }
 
 /* Block Sales Detail
   ========================================================================== */
 .block-dt-sales p.text {
-  font-size: 14px;
+  font-size: 13px;
   color: #333;
   line-height: 1.6;
   margin-bottom: 25px;
@@ -1289,7 +1294,7 @@ select {
 .block-tags .tags-first {
   font-weight: bold;
   color: #3a3a3c;
-  font-size: 14px;
+  font-size: 13px;
 }
 .block-tags li.tags-link a {
   height: 25px;
@@ -1344,7 +1349,7 @@ select {
   color: #fff;
   background: #c70f19;
   padding: 0 15px;
-  font-size: 14px;
+  font-size: 13px;
   text-transform: uppercase;
   max-width: 360px;
   position: relative;
@@ -1442,7 +1447,7 @@ select {
   text-decoration: none;
   background: #fff;
   color: #777;
-  font-size: 14px;
+  font-size: 13px;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.15);
   border: 1px solid #c70f19;
   border-radius: 4px;
@@ -1523,7 +1528,7 @@ select {
 /* Title Page
   ========================================================================== */
 h2.tit-page {
-  font-size: 14px;
+  font-size: 13px;
   color: #c70f19;
   margin-bottom: 20px;
 }
@@ -1751,7 +1756,7 @@ h2.tit-page3 {
 }
 .block-relative .item .des a {
   color: #c70f19;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.6;
   max-height: 40px;
   overflow: hidden;
@@ -1761,7 +1766,7 @@ h2.tit-page3 {
 }
 .block-relative .item .des .code {
   color: #666666;
-  font-size: 14px;
+  font-size: 13px;
 }
 .block-relative .item .des .code span {
   color: #333333;
