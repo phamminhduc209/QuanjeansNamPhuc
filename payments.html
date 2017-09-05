@@ -32,6 +32,15 @@
 </head>
 <body class="billing">
 
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
 	<header class="header">
 		<div class="block-header">
 			<div class="container">
@@ -74,20 +83,20 @@
 					</div><!-- /bblock-info -->
 				</div>
 			</div>
-			<div class="block-search block-fix">
-				<div class="icon">
-					<i class="fa fa-search"></i>
-				</div>
-				<div class="search-inner">
-					
-				</div>
+			<div class="block-search">
+				<form action="#" method="get">
+					<button type="submit" class="btn icon"><i class="fa fa-search"></i></button>
+					<div class="search-inner">
+						<input type="text" name="" class="" value="" placeholder="Search ...">
+					</div>
+				</form>
 			</div>
-			<div class="block-fb block-fix">
+			<div class="block-fb">
 				<div class="icon">
 					<i class="fa fa-facebook"></i>
 				</div>
-				<div class="search-inner">
-					
+				<div class="fb-inner">
+					<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="300px" data-height="500px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
 				</div>
 			</div>
 		</div><!-- /block-header-bottom -->
@@ -358,25 +367,82 @@
   		<i class="fa fa-angle-up" aria-hidden="true"></i>
 	</a><!-- return to top -->
 
-	<!-- Modal Confirm -->
-	<div class="modal fade" id="Confirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<!-- Modal Cart -->
+	<div class="modal fade" id="Cart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<i class="fa fa-times-circle"></i>
 				</button>
-				<div class="modal-header">
-					ĐƠN HÀNG CỦA BẠN ĐÃ ĐẶT THÀNH CÔNG
-				</div>
-				<div class="modal-body">
-					<p>
-						<strong>Cảm ơn quý khách đã mua hàng !</strong> Chúng tôi liên hệ xác nhận đến số điện thoại của quý khách và sẽ giao hàng đến cho quý khách trong thời gian từ 2-3 ngày sau khi xác nhận.
-					</p>
-					<p>
-						<strong>Chân thành cảm ơn quý khách.</strong>
-					</p>
-					<div class="text-right">
-						<a href="#" title="Trở về trang chủ" class="btn btn-danger"> Trở về trang chủ</a>
+				<div class="shopcart-ct">
+					<div class="modal-body">
+						<form action="#" method="POST" id="frm_order_items">
+							<div class="table cart-tbl">
+								<div class="table-row thead">
+									<div class="table-cell product-col t-c">Sản phẩm</div>
+									<div class="table-cell numb-col t-c">Số lượng</div>
+									<div class="table-cell total-col t-c">Thành tiền</div>
+								</div><!-- table-row thead -->
+								<div class="tr-wrap">
+									<div class="table-row clearfix">
+										<div class="table-cell product-col">
+											<figure class="img-prod">
+												<img alt="Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng" src="images/cart/1.jpg">
+											</figure>
+											<a href="#" target="_blank" title="Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng">Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng</a>
+											<p class="p-color">
+												<span>Màu sắc sản phẩm:</span>
+												<span>Đen</span>
+											</p>
+											<p class="p-size">
+												<span>Size sản phẩm:</span>
+												<span>39</span>
+												<span>|</span>
+												<a href="#" title="Xóa sản phẩm">Xóa</a>
+											</p>
+										</div>
+										<div class="table-cell numb-col t-c">
+											<select name="" size="1" class="change_quantity">
+												<option value="0">0</option>
+												<option value="1" selected="">1</option>
+												<option value="2">2</option>
+											</select>
+										</div>
+										<div class="table-cell total-col t-r">355.000đ</div><!-- /table-cell total-col t-r -->
+									</div>
+									<div class="table-row clearfix">
+										<div class="table-cell product-col">
+											<figure class="img-prod">
+												<img alt="Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng" src="images/cart/1.jpg">
+											</figure>
+											<a href="#" target="_blank" title="Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng">Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng</a>
+											<p class="p-color">
+												<span>Màu sắc sản phẩm:</span>
+												<span>Đen</span>
+											</p>
+											<p class="p-size">
+												<span>Size sản phẩm:</span>
+												<span>39</span>
+												<span>|</span>
+												<a href="#" title="Xóa sản phẩm">Xóa</a>
+											</p>
+										</div>
+										<div class="table-cell numb-col t-c">
+											<select name="" size="1" class="change_quantity">
+												<option value="0">0</option>
+												<option value="1" selected="">1</option>
+												<option value="2">2</option>
+											</select>
+										</div>
+										<div class="table-cell total-col t-r">355.000đ</div><!-- /table-cell total-col t-r -->
+									</div>
+								</div><!-- tr-wrap -->
+							</div><!-- table cart-tbl -->
+							<div class="block-btn">
+								<a href="#" title="Xóa tất cả" class="btn btn-default">Xóa tất cả <i class="fa fa-trash-o"></i></a>
+								<a href="#" title="Xóa tất cả" class="btn btn-danger">Thanh toán <i class="fa fa-angle-right"></i></a>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>

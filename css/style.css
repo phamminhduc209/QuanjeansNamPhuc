@@ -381,6 +381,15 @@ select {
   text-align: center;
   margin-right: 10px;
 }
+.block-cart-mb {
+  display: none;
+}
+
+/* Modal Cart
+  ========================================================================== */
+.modal {
+  z-index: 99999;
+}
 .modal button.close {
   width: 40px;
   height: 40px;
@@ -459,7 +468,6 @@ select {
   height: 100px;
   margin: 0 20px 0 0;
 }
-
 .modal .modal-header {
   text-align: center;
   background: #d9534f;
@@ -468,9 +476,34 @@ select {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
-
 .modal-content {
   border-radius: 12px;
+}
+.block-cart .shopcart-ct .thead {
+  color: #fff;
+  background: #c70f19;
+  text-align: center;
+  line-height: 50px;
+  text-transform: uppercase;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+}
+.block-cart .shopcart-ct .tr-wrap {
+  padding: 15px;
+  border: 1px solid #dfdfdf;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.block-cart .cart-tbl {
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+.block-cart .shopcart-ct .product-col {
+  width: 55%;
 }
 
 /* Block Title Commom
@@ -802,6 +835,9 @@ select {
   transition: opacity 0.35s, transform 0.35s;
 }
 
+
+/* Button
+  ========================================================================== */
 .btn-1e:after, .btn-2e:after, .btn-3e:after, .btn-4e:after, .btn-5e:after, .btn-6e:after, .btn-7e:after, .btn-8e:after, .btn-9e:after {
   content: "";
   position: absolute;
@@ -953,8 +989,25 @@ select {
 
 /* Block Banner 
   ========================================================================== */
+.block-banner {
+  position: relative;
+  background: #3085a3;
+  overflow: hidden;
+}
 .block-banner img {
   width: 100%;
+  position: relative;
+  display: block;
+  opacity: 0.95;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale3d(1.05,1.05,1);
+  transform: scale3d(1.05,1.05,1);
+}
+.block-banner:hover:hover img {
+  opacity: 0.6;
+  -webkit-transform: scale3d(1,1,1);
+  transform: scale3d(1,1,1);
 }
 
 /* Block Product 
@@ -1070,9 +1123,6 @@ select {
 
 /* Footer
   ========================================================================== */
-
-
-/* Footer Bot */
 .footer-top {
   border-top: 5px solid #c70f19;
   background: #222222;
@@ -1179,7 +1229,7 @@ select {
   margin: 0 auto;
 }
 
-/* Block Sales Cate
+/* Block Sales
   ========================================================================== */
 .block-sales .item {
   float: left;
@@ -1417,36 +1467,6 @@ select {
   background: #c70f19;
   color: #fff;
   border-color: transparent;
-}
-
-/* Block Service
-  ========================================================================== */
-.block-service .row .item {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 40px;
-}
-.block-service .row:last-child .item {
-  margin-bottom: 0px;
-}
-.block-service .item .thumb {
-  float: left;
-  width: 50px;
-  margin-right: 10px;
-}
-.block-service .item .des {
-  float: left;
-  width: calc(100% - 60px);
-}
-.block-service .item .des .title {
-  font-size: 14px;
-  color: #c70f19;
-  margin-bottom: 10px;
-}
-.block-service .item .des .description {
-  font-size: 14px;
-  color: #666;
-  line-height: 1.6;
 }
 
 /* Block Form
@@ -1828,6 +1848,8 @@ h2.tit-page3 {
   transition: all 0.3s;
 }
 
+/* Edit On Page
+  ========================================================================== */
 .edit {
   padding-top: 5px !important;
   padding-bottom: 5px !important;
@@ -1848,7 +1870,6 @@ h2.tit-page3 {
   right: 0;
   cursor: pointer;
 }
-
 .input-edit {
   position: relative;
 }
@@ -1898,6 +1919,8 @@ h2.tit-page3 {
   transition: all 0.2s;
 }
 
+/* Search && Facebook
+  ========================================================================== */
 .block-search,
 .block-fb  {
   position: fixed;
@@ -1955,31 +1978,4 @@ h2.tit-page3 {
   width: 300px;
   line-height: 40px;
   padding: 0 12px;
-}
-
-.block-cart .shopcart-ct .thead {
-  color: #fff;
-  background: #c70f19;
-  text-align: center;
-  line-height: 50px;
-  text-transform: uppercase;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  padding: 0;
-  margin: 0;
-  font-weight: 600;
-}
-.block-cart .shopcart-ct .tr-wrap {
-  padding: 15px;
-  border: 1px solid #dfdfdf;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-.block-cart .cart-tbl {
-  padding-bottom: 15px;
-  margin-bottom: 0;
-  border-bottom: none;
-}
-.block-cart .shopcart-ct .product-col {
-  width: 55%;
 }

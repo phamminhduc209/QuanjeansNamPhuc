@@ -104,6 +104,12 @@
 			<div class="nav-toogle">
 				<i class="fa"></i>
 			</div>
+			<div class="block-cart-mb">
+				<a href="#" onclick="return false;" title="Cart" data-toggle="modal" data-target="#Cart">
+					<i class="fa fa-shopping-cart"></i>
+					<span>10</span>
+				</a>
+			</div>
 			<nav class="menu-top">
 				<div class="container">
 					<ul class="nav-menu">
@@ -129,6 +135,13 @@
 						<li class="level0"><a href="pro-cate.html" title="Thi Công">KHUYẾN MÃI</a></li>
 						<li class="level0"><a href="pro-cate.html" title="Nội Thất">TUYỂN DỤNG</a></li>
 						<li class="level0"><a href="contact.html" title="Liên Hệ">Liên Hệ</a></li>
+						<li class="cart">
+							<a href="#" onclick="return false;" title="Cart" data-toggle="modal" data-target="#Cart">
+								<i class="fa fa-shopping-cart"></i>
+								<span>Giỏ hàng</span><br>
+								<span>0 Sản phẩm</span>
+							</a>
+						</li>
 					</ul>
 				</div>
 			</nav><!-- /menu-top -->
@@ -161,40 +174,48 @@
 				</div>
 				<div class="block-content">
 					<div class="row">
-						<div class="col-sm-6 item">
-							<div class="img"><img src="images/increasing.png" alt=""></div>
-							<div class="des">
-								<h3 class="title">Giai đoạn phát triển</h3>
-								<div class="description">
-									It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+						<div class="col-sm-6">
+							<div class="item">
+								<div class="img"><img src="images/increasing.png" alt=""></div>
+								<div class="des">
+									<h3 class="title">Giai đoạn phát triển</h3>
+									<div class="description">
+										It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+									</div>
 								</div>
 							</div>
 						</div><!-- /item -->
-						<div class="col-sm-6 item">
-							<div class="img"><img src="images/analytics.png" alt=""></div>
-							<div class="des">
-								<h3 class="title">Tầm nhìn</h3>
-								<div class="description">
-									It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+						<div class="col-sm-6">
+							<div class="item">
+								<div class="img"><img src="images/analytics.png" alt=""></div>
+								<div class="des">
+									<h3 class="title">Tầm nhìn</h3>
+									<div class="description">
+										It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+									</div>
 								</div>
 							</div>
 						</div><!-- /item -->
-						<div class="col-sm-6 item">
-							<div class="img"><img src="images/goal.png" alt=""></div>
-							<div class="des">
-								<h3 class="title">Sứ mệnh</h3>
-								<div class="description">
-									It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+						<div class="col-sm-6">
+							<div class="item">
+								<div class="img"><img src="images/goal.png" alt=""></div>
+								<div class="des">
+									<h3 class="title">Sứ mệnh</h3>
+									<div class="description">
+										It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+									</div>
 								</div>
 							</div>
 						</div><!-- /item -->
-						<div class="col-sm-6 item">
-							<div class="img"><img src="images/motivation.png" alt=""></div>
-							<div class="des">
-								<h3 class="title">Phương châm hoạt động</h3>
-								<div class="description">
-									It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-								</div>
+						<div class="col-sm-6">
+							<div class="item">
+								<div class="img"><img src="images/motivation.png" alt=""></div>
+								<div class="des">
+									<h3 class="title">Phương châm hoạt động</h3>
+									<div class="description">
+										It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+									</div>
+							</div>
 							</div>
 						</div><!-- /item -->
 					</div>
@@ -268,178 +289,176 @@
 				<div class="block-content">
 					<div class="product-list">
 						<div class="row">
-							<div class="col-sm-5ths col-xs-6">
-								<div class="product-item">
-							  		<div class="product-img">
-							  			<a href="#" title="">
-							  				<img src="images/products-home/1.jpg" class="img-1" alt="">
-							  				<img src="images/products-home/2.jpg" class="img-2 show-on-hover fill" alt="">
-						  				</a>
-							  		</div>
-							  		<div class="product-info">
-								  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
-								  		<div class="product-price">
-								  			<span class="price-new">345.000đ</span>
-								  			<span class="price-old">425.000đ</span>
-								  		</div>
+						<div class="col-sm-5ths col-xs-6">
+							<div class="product-item">
+						  		<div class="product-img">
+						  			<a href="#" title="">
+						  				<img src="images/products-home/1.jpg" class="img-1" alt="">
+						  				<img src="images/products-home/2.jpg" class="img-2 show-on-hover fill" alt="">
+					  				</a>
+						  		</div>
+						  		<div class="product-info">
+							  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
+							  		<div class="product-price">
+							  			<span class="price-new">345.000đ</span>
+							  			<span class="price-old">425.000đ</span>
 							  		</div>
 						  		</div>
-				  			</div>
-				  			<div class="col-sm-5ths col-xs-6">
-								<div class="product-item">
-							  		<div class="product-img">
-							  			<a href="#" title="">
-							  				<img src="images/products-home/2.jpg" class="img-1" alt="">
-							  				<img src="images/products-home/3.jpg" class="img-2 show-on-hover fill" alt="">
-						  				</a>
-							  		</div>
-							  		<div class="product-info">
-								  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
-								  		<div class="product-price">
-								  			<span class="price-new">345.000đ</span>
-								  			<span class="price-old">425.000đ</span>
-								  		</div>
+					  		</div>
+			  			</div>
+			  			<div class="col-sm-5ths col-xs-6">
+							<div class="product-item">
+						  		<div class="product-img">
+						  			<a href="#" title="">
+						  				<img src="images/products-home/2.jpg" class="img-1" alt="">
+						  				<img src="images/products-home/3.jpg" class="img-2 show-on-hover fill" alt="">
+					  				</a>
+						  		</div>
+						  		<div class="product-info">
+							  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
+							  		<div class="product-price">
+							  			<span class="price-new">345.000đ</span>
+							  			<span class="price-old">425.000đ</span>
 							  		</div>
 						  		</div>
-				  			</div>
-				  			<div class="col-sm-5ths col-xs-6">
-								<div class="product-item">
-							  		<div class="product-img">
-							  			<a href="#" title="">
-							  				<img src="images/products-home/3.jpg" class="img-1" alt="">
-							  				<img src="images/products-home/4.jpg" class="img-2 show-on-hover fill" alt="">
-						  				</a>
-							  		</div>
-							  		<div class="product-info">
-								  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
-								  		<div class="product-price">
-								  			<span class="price-new">345.000đ</span>
-								  			<span class="price-old">425.000đ</span>
-								  		</div>
+					  		</div>
+			  			</div>
+			  			<div class="col-sm-5ths col-xs-6">
+							<div class="product-item">
+						  		<div class="product-img">
+						  			<a href="#" title="">
+						  				<img src="images/products-home/3.jpg" class="img-1" alt="">
+						  				<img src="images/products-home/4.jpg" class="img-2 show-on-hover fill" alt="">
+					  				</a>
+						  		</div>
+						  		<div class="product-info">
+							  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
+							  		<div class="product-price">
+							  			<span class="price-new">345.000đ</span>
+							  			<span class="price-old">425.000đ</span>
 							  		</div>
 						  		</div>
-				  			</div>
-				  			<div class="col-sm-5ths col-xs-6">
-								<div class="product-item">
-							  		<div class="product-img">
-							  			<a href="#" title="">
-							  				<img src="images/products-home/4.jpg" class="img-1" alt="">
-							  				<img src="images/products-home/5.jpg" class="img-2 show-on-hover fill" alt="">
-						  				</a>
-							  		</div>
-							  		<div class="product-info">
-								  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
-								  		<div class="product-price">
-								  			<span class="price-new">345.000đ</span>
-								  			<span class="price-old">425.000đ</span>
-								  		</div>
+					  		</div>
+			  			</div>
+			  			<div class="col-sm-5ths col-xs-6">
+							<div class="product-item">
+						  		<div class="product-img">
+						  			<a href="#" title="">
+						  				<img src="images/products-home/4.jpg" class="img-1" alt="">
+						  				<img src="images/products-home/5.jpg" class="img-2 show-on-hover fill" alt="">
+					  				</a>
+						  		</div>
+						  		<div class="product-info">
+							  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
+							  		<div class="product-price">
+							  			<span class="price-new">345.000đ</span>
+							  			<span class="price-old">425.000đ</span>
 							  		</div>
 						  		</div>
-				  			</div>
-				  			<div class="col-sm-5ths col-xs-6">
-								<div class="product-item">
-							  		<div class="product-img">
-							  			<a href="#" title="">
-							  				<img src="images/products-home/5.jpg" class="img-1" alt="">
-							  				<img src="images/products-home/1.jpg" class="img-2 show-on-hover fill" alt="">
-						  				</a>
-							  		</div>
-							  		<div class="product-info">
-								  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
-								  		<div class="product-price">
-								  			<span class="price-new">345.000đ</span>
-								  			<span class="price-old">425.000đ</span>
-								  		</div>
+					  		</div>
+			  			</div>
+			  			<div class="col-sm-5ths col-xs-6">
+							<div class="product-item">
+						  		<div class="product-img">
+						  			<a href="#" title="">
+						  				<img src="images/products-home/5.jpg" class="img-1" alt="">
+						  				<img src="images/products-home/1.jpg" class="img-2 show-on-hover fill" alt="">
+					  				</a>
+						  		</div>
+						  		<div class="product-info">
+							  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
+							  		<div class="product-price">
+							  			<span class="price-new">345.000đ</span>
+							  			<span class="price-old">425.000đ</span>
 							  		</div>
 						  		</div>
-				  			</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-5ths col-xs-6">
-								<div class="product-item">
-							  		<div class="product-img">
-							  			<a href="#" title="">
-							  				<img src="images/products-home/1.jpg" class="img-1" alt="">
-							  				<img src="images/products-home/2.jpg" class="img-2 show-on-hover fill" alt="">
-						  				</a>
-							  		</div>
-							  		<div class="product-info">
-								  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
-								  		<div class="product-price">
-								  			<span class="price-new">345.000đ</span>
-								  			<span class="price-old">425.000đ</span>
-								  		</div>
+					  		</div>
+			  			</div>
+						<div class="col-sm-5ths col-xs-6">
+							<div class="product-item">
+						  		<div class="product-img">
+						  			<a href="#" title="">
+						  				<img src="images/products-home/1.jpg" class="img-1" alt="">
+						  				<img src="images/products-home/2.jpg" class="img-2 show-on-hover fill" alt="">
+					  				</a>
+						  		</div>
+						  		<div class="product-info">
+							  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
+							  		<div class="product-price">
+							  			<span class="price-new">345.000đ</span>
+							  			<span class="price-old">425.000đ</span>
 							  		</div>
 						  		</div>
-				  			</div>
-				  			<div class="col-sm-5ths col-xs-6">
-								<div class="product-item">
-							  		<div class="product-img">
-							  			<a href="#" title="">
-							  				<img src="images/products-home/2.jpg" class="img-1" alt="">
-							  				<img src="images/products-home/3.jpg" class="img-2 show-on-hover fill" alt="">
-						  				</a>
-							  		</div>
-							  		<div class="product-info">
-								  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
-								  		<div class="product-price">
-								  			<span class="price-new">345.000đ</span>
-								  			<span class="price-old">425.000đ</span>
-								  		</div>
+					  		</div>
+			  			</div>
+			  			<div class="col-sm-5ths col-xs-6">
+							<div class="product-item">
+						  		<div class="product-img">
+						  			<a href="#" title="">
+						  				<img src="images/products-home/2.jpg" class="img-1" alt="">
+						  				<img src="images/products-home/3.jpg" class="img-2 show-on-hover fill" alt="">
+					  				</a>
+						  		</div>
+						  		<div class="product-info">
+							  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
+							  		<div class="product-price">
+							  			<span class="price-new">345.000đ</span>
+							  			<span class="price-old">425.000đ</span>
 							  		</div>
 						  		</div>
-				  			</div>
-				  			<div class="col-sm-5ths col-xs-6">
-								<div class="product-item">
-							  		<div class="product-img">
-							  			<a href="#" title="">
-							  				<img src="images/products-home/3.jpg" class="img-1" alt="">
-							  				<img src="images/products-home/4.jpg" class="img-2 show-on-hover fill" alt="">
-						  				</a>
-							  		</div>
-							  		<div class="product-info">
-								  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
-								  		<div class="product-price">
-								  			<span class="price-new">345.000đ</span>
-								  			<span class="price-old">425.000đ</span>
-								  		</div>
+					  		</div>
+			  			</div>
+			  			<div class="col-sm-5ths col-xs-6">
+							<div class="product-item">
+						  		<div class="product-img">
+						  			<a href="#" title="">
+						  				<img src="images/products-home/3.jpg" class="img-1" alt="">
+						  				<img src="images/products-home/4.jpg" class="img-2 show-on-hover fill" alt="">
+					  				</a>
+						  		</div>
+						  		<div class="product-info">
+							  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
+							  		<div class="product-price">
+							  			<span class="price-new">345.000đ</span>
+							  			<span class="price-old">425.000đ</span>
 							  		</div>
 						  		</div>
-				  			</div>
-				  			<div class="col-sm-5ths col-xs-6">
-								<div class="product-item">
-							  		<div class="product-img">
-							  			<a href="#" title="">
-							  				<img src="images/products-home/4.jpg" class="img-1" alt="">
-							  				<img src="images/products-home/5.jpg" class="img-2 show-on-hover fill" alt="">
-						  				</a>
-							  		</div>
-							  		<div class="product-info">
-								  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
-								  		<div class="product-price">
-								  			<span class="price-new">345.000đ</span>
-								  			<span class="price-old">425.000đ</span>
-								  		</div>
+					  		</div>
+			  			</div>
+			  			<div class="col-sm-5ths col-xs-6">
+							<div class="product-item">
+						  		<div class="product-img">
+						  			<a href="#" title="">
+						  				<img src="images/products-home/4.jpg" class="img-1" alt="">
+						  				<img src="images/products-home/5.jpg" class="img-2 show-on-hover fill" alt="">
+					  				</a>
+						  		</div>
+						  		<div class="product-info">
+							  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
+							  		<div class="product-price">
+							  			<span class="price-new">345.000đ</span>
+							  			<span class="price-old">425.000đ</span>
 							  		</div>
 						  		</div>
-				  			</div>
-				  			<div class="col-sm-5ths col-xs-6">
-								<div class="product-item">
-							  		<div class="product-img">
-							  			<a href="#" title="">
-							  				<img src="images/products-home/5.jpg" class="img-1" alt="">
-							  				<img src="images/products-home/1.jpg" class="img-2 show-on-hover fill" alt="">
-						  				</a>
-							  		</div>
-							  		<div class="product-info">
-								  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
-								  		<div class="product-price">
-								  			<span class="price-new">345.000đ</span>
-								  			<span class="price-old">425.000đ</span>
-								  		</div>
+					  		</div>
+			  			</div>
+			  			<div class="col-sm-5ths col-xs-6">
+							<div class="product-item">
+						  		<div class="product-img">
+						  			<a href="#" title="">
+						  				<img src="images/products-home/5.jpg" class="img-1" alt="">
+						  				<img src="images/products-home/1.jpg" class="img-2 show-on-hover fill" alt="">
+					  				</a>
+						  		</div>
+						  		<div class="product-info">
+							  		<h2 class="title"><a href="#" title="">Sản phẩm quần jeans cao cấp được bán trên website công ty</a></h2>
+							  		<div class="product-price">
+							  			<span class="price-new">345.000đ</span>
+							  			<span class="price-old">425.000đ</span>
 							  		</div>
 						  		</div>
-				  			</div>
+					  		</div>
+			  			</div>
 						</div>
 					</div>
 				</div>
@@ -482,10 +501,93 @@
 				</a>
 			</div>
 		</div><!-- /footer-bot-->
-		<a id="return-to-top" class="td-scroll-up" href="javascript:void(0)">
-	  		<i class="fa fa-angle-up" aria-hidden="true"></i>
-		</a><!-- return to top -->
 	</footer><!-- footer -->
+
+	<a id="return-to-top" class="td-scroll-up" href="javascript:void(0)">
+  		<i class="fa fa-angle-up" aria-hidden="true"></i>
+	</a><!-- return to top -->
+
+	<!-- Modal Cart -->
+	<div class="modal fade" id="Cart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<i class="fa fa-times-circle"></i>
+				</button>
+				<div class="shopcart-ct">
+					<div class="modal-body">
+						<form action="#" method="POST" id="frm_order_items">
+							<div class="table cart-tbl">
+								<div class="table-row thead">
+									<div class="table-cell product-col t-c">Sản phẩm</div>
+									<div class="table-cell numb-col t-c">Số lượng</div>
+									<div class="table-cell total-col t-c">Thành tiền</div>
+								</div><!-- table-row thead -->
+								<div class="tr-wrap">
+									<div class="table-row clearfix">
+										<div class="table-cell product-col">
+											<figure class="img-prod">
+												<img alt="Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng" src="images/cart/1.jpg">
+											</figure>
+											<a href="#" target="_blank" title="Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng">Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng</a>
+											<p class="p-color">
+												<span>Màu sắc sản phẩm:</span>
+												<span>Đen</span>
+											</p>
+											<p class="p-size">
+												<span>Size sản phẩm:</span>
+												<span>39</span>
+												<span>|</span>
+												<a href="#" title="Xóa sản phẩm">Xóa</a>
+											</p>
+										</div>
+										<div class="table-cell numb-col t-c">
+											<select name="" size="1" class="change_quantity">
+												<option value="0">0</option>
+												<option value="1" selected="">1</option>
+												<option value="2">2</option>
+											</select>
+										</div>
+										<div class="table-cell total-col t-r">355.000đ</div><!-- /table-cell total-col t-r -->
+									</div>
+									<div class="table-row clearfix">
+										<div class="table-cell product-col">
+											<figure class="img-prod">
+												<img alt="Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng" src="images/cart/1.jpg">
+											</figure>
+											<a href="#" target="_blank" title="Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng">Tên sản phẩm quần jeans chất lượng cao được thêm vào giỏ hàng</a>
+											<p class="p-color">
+												<span>Màu sắc sản phẩm:</span>
+												<span>Đen</span>
+											</p>
+											<p class="p-size">
+												<span>Size sản phẩm:</span>
+												<span>39</span>
+												<span>|</span>
+												<a href="#" title="Xóa sản phẩm">Xóa</a>
+											</p>
+										</div>
+										<div class="table-cell numb-col t-c">
+											<select name="" size="1" class="change_quantity">
+												<option value="0">0</option>
+												<option value="1" selected="">1</option>
+												<option value="2">2</option>
+											</select>
+										</div>
+										<div class="table-cell total-col t-r">355.000đ</div><!-- /table-cell total-col t-r -->
+									</div>
+								</div><!-- tr-wrap -->
+							</div><!-- table cart-tbl -->
+							<div class="block-btn">
+								<a href="#" title="Xóa tất cả" class="btn btn-default">Xóa tất cả <i class="fa fa-trash-o"></i></a>
+								<a href="#" title="Xóa tất cả" class="btn btn-danger">Thanh toán <i class="fa fa-angle-right"></i></a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- ===== JS ===== -->
 	<script src="js/jquery.min.js"></script>

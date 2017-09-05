@@ -32,6 +32,15 @@
 </head>
 <body class="billing">
 
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
 	<header class="header">
 		<div class="block-header">
 			<div class="container">
@@ -74,22 +83,20 @@
 					</div><!-- /bblock-info -->
 				</div>
 			</div>
-			<div class="block-search block-fix">
-				<div class="icon">
-					<i class="fa fa-search"></i>
-				</div>
-				<div class="search-inner">
-					<form action="#" method="get">
-						
-					</form>
-				</div>
+			<div class="block-search">
+				<form action="#" method="get">
+					<button type="submit" class="btn icon"><i class="fa fa-search"></i></button>
+					<div class="search-inner">
+						<input type="text" name="" class="" value="" placeholder="Search ...">
+					</div>
+				</form>
 			</div>
-			<div class="block-fb block-fix">
+			<div class="block-fb">
 				<div class="icon">
 					<i class="fa fa-facebook"></i>
 				</div>
-				<div class="search-inner">
-					
+				<div class="fb-inner">
+					<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="300px" data-height="500px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
 				</div>
 			</div>
 		</div><!-- /block-header-bottom -->
