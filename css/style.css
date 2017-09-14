@@ -694,7 +694,9 @@ select {
 .block-about .item {
   margin-bottom: 30px;
   position: relative;
-}  
+  float: left;
+  width: 100%;
+}
 .block-about .item .img {
   width: 90px;
   height: 90px;
@@ -1644,6 +1646,21 @@ h2.tit-page3 {
   float: left;
   margin-right: 10px;
 }
+.bl-color ul li.out-of-stock:before, .bl-size ul li.out-of-stock:before {
+  content: "\f00d";
+  font-family: "FontAwesome";
+  color: #c70f19;
+  font-size: 18px;
+  cursor: no-drop;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  margin: 0 auto;
+  display: block;
+}
 .block-product-options .bl-modul-cm .des,
 .block-product-options .bl-modul .des {
   float: left;
@@ -1663,6 +1680,7 @@ h2.tit-page3 {
   display: inline-block;
   width: 26px;
   height: 26px;
+  text-align: center;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
@@ -1681,6 +1699,13 @@ h2.tit-page3 {
 .bl-size ul li {
   border: 1px solid #b2b2b2;
   cursor: pointer;
+  opacity: 0.5;
+  position: relative;
+  overflow: hidden;
+}
+.bl-color ul li.out-of-stock:hover,
+.bl-size ul li.out-of-stock:hover {
+  border: 1px solid #b2b2b2;
   opacity: 0.5;
 }
 .bl-color ul li:hover,
