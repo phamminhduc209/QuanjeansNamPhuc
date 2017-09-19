@@ -1,15 +1,16 @@
 /*------------------------------------------------------------------
 [Table of contents]
 1.  Styles for devices max 1200px
-2.  
-3.  
-4.  
-5.  
-6.  
-7.  
-8.  
-9.  
-10. 
+2.  Styles for devices max 1024px
+3.  Styles for devices max 991px
+4.  Styles for devices max 800px
+5.  Styles for devices max 768px
+6.  Styles for devices max 767px
+7.  Styles for devices max 600px
+8.  Styles for devices max 560px
+9.  Styles for devices max 375px
+10. Styles for devices max 320px
+11. Responsive Five Columm
 
 ------------------------*/
 
@@ -69,6 +70,11 @@
 [Styles for devices max 800px
 */
 @media (max-width: 800px) {
+  .block-categories-hm .item:hover img {
+    opacity: 0.9;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+  }
   .block-logo img {
     margin: 0 auto;
   }
