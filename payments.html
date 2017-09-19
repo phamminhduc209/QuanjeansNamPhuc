@@ -104,30 +104,36 @@
 			<div class="nav-toogle">
 				<i class="fa"></i>
 			</div>
+			<div class="block-cart-mb">
+				<a href="#" onclick="return false;" title="Cart" data-toggle="modal" data-target="#Cart">
+					<i class="fa fa-shopping-cart"></i>
+					<span>10</span>
+				</a>
+			</div>
 			<nav class="menu-top">
 				<div class="container">
 					<ul class="nav-menu">
 						<li class="level0 active"><a href="index.html" title="Trang Chủ">Trang Chủ</a></li>
 						<li class="level0"><a href="about.html" title="Giới Thiệu">Giới Thiệu</a></li>
 						<li class="level0 parent">
-							<a href="pro-cate.html" title="SẢN PHẨM">SẢN PHẨM</a>
+							<a href="product.html" title="Sản Phẩm">SẢN PHẨM</a>
 							<ul class="level0 submenu">
-								<li class="level1"><a href="pro-child-cate.html" title="Tên menu sản phẩm quần jeans số 01">Tên menu sản phẩm quần jeans số 01</a></li>
-								<li class="level1"><a href="pro-child-cate.html" title="Tên menu sản phẩm quần jeans số 02">Tên menu sản phẩm quần jeans số 02</a></li>
+								<li class="level1"><a href="product.html" title="Tên menu sản phẩm quần jeans số 01">Tên menu sản phẩm quần jeans số 01</a></li>
+								<li class="level1"><a href="product.html" title="Tên menu sản phẩm quần jeans số 02">Tên menu sản phẩm quần jeans số 02</a></li>
 								<li class="level1 parent">
-									<a href="pro-child-cate.html" title="Tên menu sản phẩm quần jeans số 03">Tên menu sản phẩm quần jeans số 03</a>
+									<a href="product.html" title="Tên menu sản phẩm quần jeans số 03">Tên menu sản phẩm quần jeans số 03</a>
 									<ul class="level1 submenu">
-										<li class="level2"><a href="pro-child-cate.html" title="Tên menu sản phẩm quần jeans số 01">Tên menu sản phẩm quần jeans số 01</a></li>
-										<li class="level2"><a href="pro-child-cate.html" title="Tên menu sản phẩm quần jeans số 02">Tên menu sản phẩm quần jeans số 02</a></li>
-										<li class="level2"><a href="pro-child-cate.html" title="Tên menu sản phẩm quần jeans số 03">Tên menu sản phẩm quần jeans số 03</a></li>
-										<li class="level2"><a href="pro-child-cate.html" title="Tên menu sản phẩm quần jeans số 04">Tên menu sản phẩm quần jeans số 04</a></li>
+										<li class="level2"><a href="product.html" title="Tên menu sản phẩm quần jeans số 01">Tên menu sản phẩm quần jeans số 01</a></li>
+										<li class="level2"><a href="product.html" title="Tên menu sản phẩm quần jeans số 02">Tên menu sản phẩm quần jeans số 02</a></li>
+										<li class="level2"><a href="product.html" title="Tên menu sản phẩm quần jeans số 03">Tên menu sản phẩm quần jeans số 03</a></li>
+										<li class="level2"><a href="product.html" title="Tên menu sản phẩm quần jeans số 04">Tên menu sản phẩm quần jeans số 04</a></li>
 									</ul>
 								</li>
-								<li class="level1"><a href="pro-child-cate.html" title="">Tên menu sản phẩm quần jeans số 04</a></li>
+								<li class="level1"><a href="product.html" title="">Tên menu sản phẩm quần jeans số 04</a></li>
 							</ul>
 						</li>
-						<li class="level0"><a href="pro-cate.html" title="Thi Công">KHUYẾN MÃI</a></li>
-						<li class="level0"><a href="pro-cate.html" title="Nội Thất">TUYỂN DỤNG</a></li>
+						<li class="level0"><a href="sales.html" title="Thi Công">KHUYẾN MÃI</a></li>
+						<li class="level0"><a href="recruitment.html" title="Nội Thất">TUYỂN DỤNG</a></li>
 						<li class="level0"><a href="contact.html" title="Liên Hệ">Liên Hệ</a></li>
 						<li class="cart">
 							<a href="#" onclick="return false;" title="Cart" data-toggle="modal" data-target="#Cart">
@@ -172,7 +178,8 @@
 								<div class="form-group">
 									<label class="choose-another"><input type="radio" class="radio-cus"> Chuyển khoản ngân hàng</label>
 								</div>
-								<div class="content">
+								<div class="form-group">
+									<div class="content">
 									<div class="form-group">
 										<div class="thumb">
 											<img src="images/payments/VIB.jpg" alt="">
@@ -216,6 +223,7 @@
 												It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English
 											</p>
 										</div>
+									</div>
 									</div>
 								</div>
 								<div class="form-group">
@@ -449,6 +457,31 @@
 								<a href="#" title="Xóa tất cả" class="btn btn-danger">Thanh toán <i class="fa fa-angle-right"></i></a>
 							</div>
 						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Confirm -->
+	<div class="modal fade" id="Confirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<i class="fa fa-times-circle"></i>
+				</button>
+				<div class="modal-header">
+					ĐƠN HÀNG CỦA BẠN ĐÃ ĐẶT THÀNH CÔNG
+				</div>
+				<div class="modal-body">
+					<p>
+						<strong>Cảm ơn quý khách đã mua hàng !</strong> Chúng tôi liên hệ xác nhận đến số điện thoại của quý khách và sẽ giao hàng đến cho quý khách trong thời gian từ 2-3 ngày sau khi xác nhận.
+					</p>
+					<p>
+						<strong>Chân thành cảm ơn quý khách.</strong>
+					</p>
+					<div class="text-right">
+						<a href="index.html" title="Trở về trang chủ" class="btn btn-danger"> Trở về trang chủ</a>
 					</div>
 				</div>
 			</div>
