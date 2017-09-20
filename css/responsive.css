@@ -278,6 +278,10 @@
   .input-edit {
     display: none;
   }
+  /* Hide header info */
+  .block-header .block-info {
+    display: none;
+  }
 }
 
 @media (min-width: 800px) {
