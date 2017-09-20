@@ -348,8 +348,8 @@
 							<p>Địa chỉ: 788 - 790 Lạc Long Quân, phường 9, quận Tân Bình, thành phố Hồ Chí Minh</p>
 							<p>Điện thoại: 08 86 02 440</p>
 							<p>Di động: 0918 306 666 - 0918 207 777</p>
-							<p class="link">Email: <a href="mailto:amphucjean@yahoo.com.vn">amphucjean@yahoo.com.vn</a></p>
-							<p class="link">Website: <a href="#">www.namphucjean.com</a></p>
+							<p>Email: <a href="mailto:amphucjean@yahoo.com.vn">amphucjean@yahoo.com.vn</a></p>
+							<p>Website: <a href="#">www.namphucjean.com</a></p>
 						</address>
 						<div class="block-statistics">
 							<p><span>Truy cập hôm nay:</span> 1.234</p>
@@ -367,9 +367,10 @@
 		<div class="footer-bot">
 			<div class="container">
 				<p class="text-center"><i>2017 Designed by iWeb247.vn</i></p>
-				<a href="#" title="" class="chat">
-					<i class="fa fa-comments"></i> Chat tư vấn
-				</a>
+				<div class="fbchatbox hidden-xs">
+					<div class="fb-page fb-page1" data-href="https://www.facebook.com/www.icare.center" data-small-header="true" data-adapt-container-width="false" data-height="300" data-width="300" data-hide-cover="true" data-show-facepile="true" data-show-posts="false" data-tabs="messages"><div class="fb-xfbml-parse-ignore"></div></div>
+					<span id="closefbchat" style="white-space: nowrap; position: absolute; right: 2px; bottom: 0px; padding: 5px 25px; background: #f46602; color: rgb(255, 255, 255); cursor: pointer; border-radius: 4px 4px 0 0;">Tắt Chat</span>
+				</div>
 			</div>
 		</div><!-- /footer-bot-->
 		<a id="return-to-top" class="td-scroll-up" href="javascript:void(0)">
@@ -502,6 +503,20 @@
     <script src="lib/flexslider/jquery.flexslider-min.js"></script>
     <!-- Js Common -->
 	<script src="js/common.js"></script>
+
+	<script>
+		jQuery('.fb-page1').toggleClass('hide');
+			jQuery('#closefbchat').html('<i class="fa fa-comments fa-2x"></i> Chat Tư Vấn').css({'bottom':0});
+		jQuery('#closefbchat').click(function(){
+			jQuery('.fb-page1').toggleClass('hide');
+			if(jQuery('.fb-page1').hasClass('hide')){
+				jQuery('#closefbchat').html('<i class="fa fa-comments fa-2x"></i> Chat Tư Vấn').css({'bottom':0});
+			}
+			else{
+				jQuery('#closefbchat').text('Tắt Chat').css({'bottom':299});
+			}
+		});
+	</script>
 
 </body>
 </html>
