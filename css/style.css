@@ -1270,8 +1270,10 @@ select {
 }
 
 .block-tags ul li {
+  list-style: none;
   display: inline-block;
   margin-right: 10px;
+  margin-bottom: 5px;
 }
 .block-tags ul li:last-child {
   margin-right: 0;
@@ -1279,7 +1281,7 @@ select {
 .block-tags .tags-first {
   font-weight: bold;
   color: #3a3a3c;
-  font-size: 13px;
+  font-size: 14px;
 }
 .block-tags li.tags-link a {
   height: 25px;
@@ -1295,6 +1297,11 @@ select {
 .block-tags li.tags-link:hover a {
   background: #c70f19;
   color: #fff
+}
+.block-share .share-item {
+  display: inline-block;
+  vertical-align: top;
+  line-height: initial;
 }
 
 .block-aritcle-related .list li {
