@@ -1169,10 +1169,10 @@ select {
 .ft-info address p:last-child {
   margin-bottom: 0;
 }
-.ft-info p.link a {
+.ft-info p a {
   color: #eaeaea;
 }
-.ft-info p.link a:hover {
+.ft-info p a:hover {
   color: #fff;
 }
 .block-statistics p {
@@ -1885,9 +1885,12 @@ h2.tit-page3 {
   padding-top: 5px !important;
   padding-bottom: 5px !important;
   position: relative;
-  border: 1px dashed #c70f19;
+  border: 1px dashed transparent;
 }
-.edit:before {
+.edit:hover {
+  border: 1px dashed #c70f19;\
+}
+.edit:hover:before {
   content: "\f040";
   font-family: "FontAwesome";
   font-size: 13px;

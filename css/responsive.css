@@ -267,6 +267,17 @@
     -webkit-transform: scale3d(1,1,1);
     transform: scale3d(1,1,1);
   }
+  /* Hide Edit */
+  .edit {
+    border: none;
+    padding: 0 !important;
+  }
+  .edit:before {
+    display: none;
+  }
+  .input-edit {
+    display: none;
+  }
 }
 
 /*----------------
