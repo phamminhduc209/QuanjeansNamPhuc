@@ -742,21 +742,10 @@ select {
 }
 .block-categories-hm .item img {
   position: relative;
-  display: block;
-  min-height: 100%;
-  max-width: 100%;
-  width: 100%;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-}
-.block-categories-hm .item:hover img {
-  opacity: 0.9;
-  -webkit-transform: scale3d(1.1,1.1,1);
-  transform: scale3d(1.1,1.1,1);
-}
-.block-categories-hm .item:hover .des {
-  background: rgba(0, 0, 0, 0.7);
-  opacity: 1;
+  // display: block;
+  // min-height: 100%;
+  // max-width: 100%;
+  // width: 100%;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
 }

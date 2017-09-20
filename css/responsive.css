@@ -280,6 +280,21 @@
   }
 }
 
+@media (min-width: 800px) {
+  /* Hover IMG Home */
+  .block-categories-hm .item:hover img {
+    opacity: 0.9;
+    -webkit-transform: scale3d(1.1,1.1,1);
+    transform: scale3d(1.1,1.1,1);
+  }
+  .block-categories-hm .item:hover .des {
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+  } 
+}
+
 /*----------------
 [Styles for devices max 768px
 */
