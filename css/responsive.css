@@ -409,7 +409,6 @@
     padding-bottom: 0;
     text-align: left;
   }
-
   .block-cart .shopcart-ct .thead {
     display: none;
   }
@@ -429,6 +428,15 @@
 /*----------------
 [Styles for devices max 375px
 */
+@media (max-width: 414px) {
+  .block-title-cm .block-title .desc {
+    padding: 0px 20px;
+  }
+}
+
+/*----------------
+[Styles for devices max 375px
+*/
 @media (max-width: 375px) {
   .block-info .item {
     margin-bottom: 10px;
@@ -438,9 +446,6 @@
   }
   .block-info .item p span.info {
     font-size: 13px;
-  }
-  .block-title-cm .block-title .desc {
-    padding: 0px 20px;
   }
   .block-about .block-title {
     margin-bottom: 60px;
