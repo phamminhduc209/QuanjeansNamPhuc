@@ -184,9 +184,9 @@ select {
 }
 .block-info i {
   float: left;
-  font-size: 40px;
+  font-size: 38px;
   color: #c70f19;
-  margin-right: 10px;
+  margin-right: 7px;
 }
 .block-info .item p {
   float: left;
@@ -1870,8 +1870,8 @@ h2.tit-page3 {
 /* Edit On Page
   ========================================================================== */
 .edit {
-  padding-top: 5px !important;
-  padding-bottom: 5px !important;
+  // padding-top: 5px !important;
+  // padding-bottom: 5px !important;
   position: relative;
   border: 1px dashed transparent;
 }
