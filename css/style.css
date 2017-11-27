@@ -1827,17 +1827,17 @@ h2.tit-page3 {
 .td-scroll-up {
   cursor: pointer;
   position: fixed;
-  bottom: 4px;
+  bottom: 50px;
   right: 5px;
   width: 40px;
   height: 40px;
   background-color: #c70f19;
   z-index: 1;
-  transform: translate3d(0, 70px, 0);
-  -webkit-transform: translate3d(0, 70px, 0);
-  -moz-transform: translate3d(0, 70px, 0);
-  -ms-transform: translate3d(0, 70px, 0);
-  -o-transform: translate3d(0, 70px, 0);
+  transform: translate3d(0, 90px, 0);
+  -webkit-transform: translate3d(0, 90px, 0);
+  -moz-transform: translate3d(0, 90px, 0);
+  -ms-transform: translate3d(0, 90px, 0);
+  -o-transform: translate3d(0, 90px, 0);
   -webkit-transition: transform 0.4s cubic-bezier(0.55, 0, 0.1, 1) 0s;
   -moz-transition: transform 0.4s cubic-bezier(0.55, 0, 0.1, 1) 0s;
   -o-transition: transform 0.4s cubic-bezier(0.55, 0, 0.1, 1) 0s;
@@ -2000,4 +2000,16 @@ h2.tit-page3 {
   width: 300px;
   line-height: 40px;
   padding: 0 12px;
+}
+.block-phone {
+  background: #c70f19;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.block-phone a {
+  color: #fff;
 }
